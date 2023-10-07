@@ -9,10 +9,14 @@ const App = () => {
 
   useEffect(() => {
     dispatch(fetchData());
-    console.log(data);
-  }, [dispatch, data]);
+  }, [dispatch]);
 
   if (loading === true) {
     return <div>Loading...</div>;
   }
-  return <div>{}</div>
+
+  console.log(data);
+  return <div></div>;
+};
+
+export default App;
